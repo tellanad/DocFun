@@ -3,11 +3,11 @@ python:
     - 3.7
 
 services:
-    -docker
+    - docker
 
 before_script: pip install docker-compose
 
-#Create local container
+#Create local containe
 script:
      - docker-compose run app sh -c "python manage.py test && flake8"
 
